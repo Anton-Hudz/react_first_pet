@@ -2,16 +2,17 @@
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import Technologies from './components/Technologies/Technologies';
+import Navbar from './components/Nav/Nav';
+import Profile from './components/Profile/Profile';
 
 function App() {
   return (
-    <div className="App">
+      <div className="app-wrapper">
       <Header />
-      <Technologies />
+      <Navbar />
+      <Profile />
       <Footer />
-
-    </div>
+      </div>
   );
 }
 

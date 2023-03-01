@@ -1,0 +1,83 @@
+
+  
+  /*надо задать еще position relative and overflow hidden*/
+  
+  .social__profile__button{
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #00000080;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow:hidden;
+  }
+  
+  .social__profile__button img{
+    width: 50px;
+  }
+ .social__profile__button button{
+    font-size: 26px;
+    color: #67798e;
+    transition: all 0.3s ease;
+    z-index: 1; 
+  } 
+  
+  .social__profile__button:after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    transform: translate(0, 70px);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: absolute; 
+    z-index: 1; 
+    opacity: 0.6; 
+  }
+  
+  .social__profile__button.v1:after{
+    background-color: #833AB4;
+  }
+  .social__profile__button.v2:after{
+    background-color: #4261a4;
+  }
+  .social__profile__button.v3:after{
+    background-color: #333;
+  }
+  .social__profile__button.v4:after{
+    background-color: #00acee;
+  }
+  .social__profile__button.v5:after{
+    background-color: #0e76a8;
+  }
+  .social__profile__button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 0px 15px #00000080;
+  }
+  
+  .social__profile__button:hover i{
+     color: #fff;
+  }
+  
+  .social__profile__button:hover:after{
+    transform: translate(0);
+  }
+
+  .social__profile_buttons{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content: end;
+  }
+
+  /* .social__profile__button i{
+    font-size: 26px;
+    color: #67798e;
+    transition: all 0.3s ease;
+    z-index: 1; 
+  } */

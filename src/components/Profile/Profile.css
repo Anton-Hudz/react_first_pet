@@ -1,11 +1,11 @@
 
-.content {
+.contentImg {
   grid-area: c;
   background-color: #ebf1f1;
 
 }
 
-.content img {
+.contentImg img {
   width: 500px;
   height: 100px;
 }
